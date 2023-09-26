@@ -1,5 +1,5 @@
-import React from 'react';
-import logo from '../images/Logo .svg'
+import React, { useState } from 'react';
+import logo from '../images/Logo .svg';
 
 const Nav = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +9,7 @@ const Nav = () => {
     }
 
     return (
-        <nav className={'navbar ${menuOpen ? "open" : ""}'}>
+        <nav className={`navbar ${menuOpen ? "open" : ""}`}>
             <a href="/" className="logo">
               <img src={logo} alt='logo'/>
             </a>
@@ -22,27 +22,27 @@ const Nav = () => {
             </div>
 
         {/* nav items*/}
-        <ul className={'nav-links ${menuOpen ? "visible" :""}'}>
+        <ul className={`nav-links ${menuOpen ? "visible" :""}`}>
             <li>
-                <a href='/'>Home</a>
+                <a href="/">Home</a>
             </li>
             <li>
-                <a href='/'>About</a>
+                <a href="/">About</a>
             </li>
             <li>
-                <a href='/'>Services</a>
+                <a href="/">Services</a>
             </li>
             <li>
-                <a href='/'>Menu</a>
+                <a href="/">Menu</a>
             </li>
             <li>
-                <a href='/'>Reservations</a>
+                <a href="/">Reservations</a>
             </li>
             <li>
-                <a href='/'>Order Online</a>
+                <a href="/">Order Online</a>
             </li>
             <li>
-                <a href='/'>Login</a>
+                <a href="/">Login</a>
             </li>
         </ul>
            
